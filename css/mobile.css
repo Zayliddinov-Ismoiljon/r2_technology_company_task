@@ -1,0 +1,13 @@
+/* mobile style start for 1024px */
+
+@media only screen and (min-width:1024px){
+  .navbar_item1{
+    width: 40%;
+  }
+  
+  .navbar_item2 button{
+    padding: 14px 45px;
+  }
+}
+
+/* mobile style end for 1024px */
