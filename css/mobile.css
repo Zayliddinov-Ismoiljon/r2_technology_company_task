@@ -197,7 +197,9 @@
 
  .site-heading{
   width: 95%;
+  margin: 0 auto;
   top: 100px;
+  text-align: center;
  }
 
  .service{
