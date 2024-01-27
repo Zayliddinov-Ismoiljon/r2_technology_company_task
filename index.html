@@ -17,6 +17,8 @@
 
   <link rel="stylesheet" href="css/mobile.css">
 
+  <link rel="stylesheet" href="css/animation.css">
+
   <!--    Fontawesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
         integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
@@ -32,14 +34,79 @@
 
   <link href="https://api.fontshare.com/v2/css?f[]=gambetta@1,2&f[]=general-sans@1,2&display=swap" rel="stylesheet">
 
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
 </head>
 <body>
   
+    <div class="loading-container" id="loading-container">
+        <!-- <div class="loading"></div> -->
+        <div class="animation01">
+            <div class="rhombus_small">
+                <div class="rhombus">
+                    <div class="border_box">
+                        <span class="line line01"></span>
+                        <span class="line line02"></span>
+                        <span class="line line03"></span>
+                        <span class="line line04"></span>
+                        <span class="circle circle01"></span>
+                        <span class="circle circle02"></span>
+                        <span class="circle circle03"></span>
+                        <span class="circle circle04"></span>
+                        <span class="animation_line animation_line01"></span>
+                        <span class="animation_line_wrapper animation_line02_wrapper"><span class="animation_line animation_line02"></span></span>
+                        <span class="animation_line animation_line03"></span>
+                        <span class="animation_line_wrapper animation_line04_wrapper"><span class="animation_line animation_line04"></span></span>
+                        <span class="animation_line animation_line05"></span>
+                        <span class="animation_line_wrapper animation_line06_wrapper"><span class="animation_line animation_line06"></span></span>
+                        <span class="animation_line animation_line07"></span>
+                        <span class="animation_line_wrapper animation_line08_wrapper"><span class="animation_line animation_line08"></span></span>
+                    </div>
+                    <div class="wave">
+                        <div class="wave_wrapper"><div class="wave_box"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="animation02">
+            <div class="rhombus_box">
+                <span class="rhombus_item_wrapper rhombus_item01_wrapper"><span class="rhombus_item"></span></span>
+                <span class="rhombus_item_wrapper rhombus_item02_wrapper"><span class="rhombus_item"></span></span>
+            </div>
+            <div class="double_content">
+                <div class="double_wrapper02 dotted02"><div class="dotted_hide"><div class="double_wrapper01 dotted01"><span class="dotted_right"></span></div></div></div>
+                <div class="double_wrapper02 white02"><div class="double_wrapper01 white01"></div></div>
+                <div class="double_wrapper02 gray02"><div class="double_wrapper01 gray01"></div></div>
+                <div class="double_wrapper02 orange02"><div class="double_wrapper01 orange01"></div></div>
+            </div>
+            <div class="name">
+                <p>R2 TECHNOLOGY COMPANY</p>
+                <span class="name_circle01"></span>
+                <span class="name_circle02"></span>
+            </div>
+        </div>
+    </div>
 
     <!-- HEADER START -->
     <header>
       <div class="container">
         <navbar class="navbar">
+            <div class="burger hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
+            
+                <ul class="menu__box">
+                  <li><a class="menu__item" href="#">Направления</a></li>
+                  <li><a class="menu__item" href="#">Портфолио</a></li>
+                  <li><a class="menu__item" href="#">Контакты</a></li>
+                  <li><a class="menu__item" href="#">Адресс</a></li>
+                </ul>
+            </div>
           <div class="navbar_item1">
             <ul>
               <li>
@@ -59,15 +126,19 @@
       </div>
     </header>
     <!-- HEADER END -->
+
+    
     
     <!-- CORELDRAW SECTION START --> 
 
     <section class="coreldraw">
         <div class="coreldraw__gradient"></div>
         <div class="container">
-            <h1 class="site-heading">почему мы не используем coreldraw</h1>
+            <h1 class="site-heading animate__animated animate__bounce animate__fadeInRight">почему мы не используем coreldraw</h1>
         </div>
     </section>
+
+    <button class="top-button" onclick="scrollToTop()">Top</button>
 
     <!-- CORELDRAW SECTION END -->
 
@@ -78,63 +149,106 @@
             <div class="row">
                 <div class="col-xl-9 col-lg-8 col-md-7 col-sm-12 col-12">
                   <div class="disegn">
-                    <p class="design__text">В мире дизайна мы сделали выбор в пользу Adobe, оставив за бортом формат CorelDraw. Давайте разберем, почему именно Adobe стал нашим надежным союзником в творчестве.</p>
+                    <p class="design__text animate__animated animate__bounce animate__fadeInRight">В мире дизайна мы сделали выбор в пользу Adobe, оставив за бортом формат CorelDraw. Давайте разберем, почему именно Adobe стал нашим надежным союзником в творчестве.</p>
                   </div>
 
                   <ol class="service__ol">
                     <li>
                         <div class="service__item1">
-                            <div class="service__one">1</div>
+                            <div class="service__one animate__animated animate__bounce animate__rotateInUpLeft">1</div>
                             <div class="service__adobe">
-                                <p>Adobe - это компания, представляющая широкий спектр продуктов, среди которых вы, вероятно, знакомы с основными: </p>
+                                <p class="service__adobe_text animate__animated animate__bounce animate__fadeInRight">Adobe - это компания, представляющая широкий спектр продуктов, среди которых вы, вероятно, знакомы с основными: </p>
                                 <div class="row gap-3">
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"><img src="./images/illustrator.png" alt=""></div>
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"><img src="./images/pdf-icon.svg" alt=""></div>
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"><img src="./images/adobe_primer.png" alt=""></div>
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"><img src="./images/photoshop.png" alt=""></div>
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"><img src="./images/indesign.png" alt=""></div>
-                                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12"><img src="./images/effects.png" alt=""></div>
-                                    <span>а также более 90 других продуктов</span>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12"><img src="./images/illustrator.png" alt=""></div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12"><img src="./images/pdf-icon.svg" alt=""></div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12"><img src="./images/adobe_primer.png" alt=""></div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12"><img src="./images/photoshop.png" alt=""></div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12"><img src="./images/indesign.png" alt=""></div>
+                                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12"><img src="./images/effects.png" alt=""></div>
                                 </div>
                             </div>
                           </div>
                     </li>
                     <li>
-                        <p class="sevice__ol__text">
+                        <p class="sevice__ol__text animate__animated animate__bounce animate__fadeInRight">
                             Более тысячи специалистов по всему миру активно участвуют в разработке и обеспечивают высокое качество продуктов и их разнообразные возможности.
                             <span>В то время как CorelDraw ограничивается только CorelDraw.</span> 
                         </p>
                     </li>
-                  </ol>  
+                    <li class="service__ol_item2">
+                        <div class="animate__animated animate__bounce animate__rotateInUpLeft">2</div>
+                        <p class="animate__animated animate__bounce animate__fadeInRight">Поддержка CorelDraw практически отсутствует в Европе и США, поскольку более 98% типографий в этих регионах не используют данный формат.</p>
+                    </li>
+                    <li>
+                        <div class="coreldraw__li_item">
+                            <div class="coreldraw__li_item-content animate__animated animate__bounce animate__rotateInUpLeft">3</div>
+                            <p class="animate__animated animate__bounce animate__fadeInRight">Главный недостаток CorelDraw заключается в преобразовании документа во внутренний формат bitmap. Это особенно заметно при обработке растровых изображений, где могут возникнуть различные артефакты, такие как неожиданные грани, изменение цветов или полная инверсия изображения.</p>
+                        </div>
+                        <div class="coreldraw__error_info">
+                            <div class="coreldraw__error">
+                                <img src="./images/coreldraw_error.png" alt="image">
+                            </div>
+                            <div class="coreldraw__warning">
+                                <img src="./images/coreldraw_warning.png" alt="image">
+                            </div>
+                        </div>
+        
+                        <div class="coreldraw__pdf_text animate__animated animate__bounce animate__fadeInRight">
+                            <p>В отличие от этого, Illustrator лишен подобных неожиданностей и обладает полной совместимостью с форматами PDF и EPS, необходимыми для полиграфии. Важно отметить, что, несмотря на возможность сохранения файлов в формате PDF, CorelDraw плохо распознает PDF файлы, что может привести к потере некоторых элементов макета. Поэтому при подготовке макета для офсетной полиграфии Illustrator остается оптимальным выбором.</p>
+                        </div>
+
+                        <div class="coreldraw__pdf_list row gap-0">
+                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12"><img src="./images/pdf_img1.png" alt="image" class="animate__animated animate__bounce animate__lightSpeedInLeft"></div>
+                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12 vector_about"><img src="./images/pdf_img2.png" alt="image" class="animate__animated animate__bounce animate__lightSpeedInLeft"><div class="vector_info vector_1"><img class="vector_img" src="./images/ai_icon.png" alt="icon"></div></div>
+                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12"><img src="./images/pdf_img3.png" alt="image" class="animate__animated animate__bounce animate__lightSpeedInLeft"></div>
+                            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-12 col-12 vector_about" style="margin-left: auto;"><img src="./images/pdf_img4.png" alt="image" class="animate__animated animate__bounce animate__lightSpeedInLeft"><div class="vector_info vector_2"><img class="vector_img" src="./images/illustrator_icon.png" alt="icon"></div></div>
+                        </div>
+                    </li>
+                    <li class="service__ol_item2">
+                        <div class="animate__animated animate__bounce animate__rotateInUpLeft">4</div>
+                        <p class="animate__animated animate__bounce animate__fadeInRight">Современная лицензия CorelDraw может оцениваться в 600 долларов в год на одного пользователя, что может быть финансово недоступным для многих типографий. Из-за этого они вынуждены использовать устаревшие версии программы, что может привести к искаженному отображению контента.</p>
+                    </li>
+                    <li class="service__ol_item2">
+                        <div class="animate__animated animate__bounce animate__rotateInUpLeft">5</div>
+                        <p class="animate__animated animate__bounce animate__fadeInRight">Обучение наших дизайнеров работе в CorelDraw требовало бы значительного времени. Учитывая, что это формат с тенденцией к упадку, вкладывание человеческого капитала в него становится неоправданно.</p>
+                    </li>
+                    <li>
+                        <p class="sevice__ol__text animate__animated animate__bounce animate__fadeInRight">
+                            ​​Используя среду Adobe, мы вкладываемся в инновации, качество и признание в мировом масштабе. Присоединяйтесь к нам в этом увлекательном путешествии в мир творчества, где каждый проект становится настоящим произведением искусства.
+                        </p>
+                    </li>
+                    </ol>
                 </div>
+                  
+                  
 
                 <div class="col-xl-3 col-lg-4 col-md-5 col-sm-12 col-12">
                     <ul class="srevice_list">
-                        <li>
+                        <li class="animate__animated animate__bounce animate__backInRight">
                             <div>
                                 <a href="#">
-                                    <span>почему мы не используем <span>CorelDraw</span></span>  <img src="./images/icon1.svg" alt="icon">
+                                    <span>почему мы не используем <span>CorelDraw</span></span>  <img class="service_list_image" src="./images/icon1.svg" alt="icon">
                                 </a>
                             </div>
                         </li>
-                        <li>
+                        <li class="animate__animated animate__bounce animate__backInRight">
                             <div>
                                 <a href="#">
-                                    <span>почему мы не используем <span>CorelDraw</span></span>  <img src="./images/icon1.svg" alt="icon">
+                                    <span>почему мы не используем <span>CorelDraw</span></span>  <img class="service_list_image" src="./images/icon1.svg" alt="icon">
                                 </a>
                             </div>
                         </li>
-                        <li>
+                        <li class="animate__animated animate__bounce animate__backInRight">
                             <div>
                                 <a href="#">
-                                    <span>почему мы не используем <span>CorelDraw</span></span>  <img src="./images/icon1.svg" alt="icon">
+                                    <span>почему мы не используем <span>CorelDraw</span></span>  <img class="service_list_image" src="./images/icon1.svg" alt="icon">
                                 </a>
                             </div>
                         </li>
-                        <li>
+                        <li class="animate__animated animate__bounce animate__backInRight">
                             <div>
                                 <a href="#">
-                                    <span>почему мы не используем <span>CorelDraw</span></span>  <img src="./images/icon1.svg" alt="icon">
+                                    <span>почему мы не используем <span>CorelDraw</span></span>  <img class="service_list_image" src="./images/icon1.svg" alt="icon">
                                 </a>
                             </div>
                         </li>
@@ -323,6 +437,28 @@
 
     <!-- SERVICE SECTION END -->
 </body>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' 
+        });
+    }
+
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const loadingContainer = document.getElementById("loading-container");
+    loadingContainer.style.display = "flex";
+    setTimeout(function () {
+        loadingContainer.style.display = "none";
+        document.getElementById("content").style.display = "block";
+    }, 8000); 
+    });
+</script>
+
 
 <script type="text/javascript" src="js/jquery/jquery.js"></script>
 
