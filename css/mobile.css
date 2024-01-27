@@ -271,6 +271,6 @@
 
 @media only screen and (max-width:400px){
   .coreldraw__pdf_list::after{
-    right: 100px !important;
+    right: 110px !important;
   }
 }
