@@ -268,3 +268,9 @@
     left: 145px;
   }
 }
+
+@media only screen and (max-width:390px){
+  .coreldraw__pdf_list::after{
+    right: 115px !important;
+  }
+}

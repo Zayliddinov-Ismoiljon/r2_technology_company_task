@@ -1,18 +1,14 @@
 /*=================
 Basic style
 ==================*/
-
-
-
-
 body{
   margin: 0;
 }
-img{
+/* img{
   vertical-align:bottom;
   max-width:100%;
   width: 100%;
-}
+} */
 h1,h2,p{
   margin: 0;
 }
@@ -791,3 +787,6 @@ orange circle
       opacity: 1;
   }
 }
+
+
+
