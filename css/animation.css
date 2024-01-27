@@ -24,7 +24,7 @@ animation
   margin: auto;
   width: 40vw;
   height: 40vw;
-  animation: rhombus_box 0.4s linear 3.55s forwards;
+  animation: rhombus_box 0.4s linear 2.55s forwards;
 }
 .rhombus_item_wrapper{
   position: absolute;
@@ -50,11 +50,11 @@ animation
   transform: rotate(45deg)
 }
 .rhombus_item01_wrapper{
-  animation: rhombus_item01 0.5s linear 2.95s forwards;
+  animation: rhombus_item01 0.2s linear 1.95s forwards;
 }
 
 .rhombus_item02_wrapper{
-  animation: rhombus_item02 0.5s linear 2.95s forwards;
+  animation: rhombus_item02 0.2s linear 1.95s forwards;
 }
 @keyframes rhombus_item01{
   0%{
@@ -125,7 +125,7 @@ dotted circle
 ============*/
 .dotted02{
   top: 0;
-  animation-delay: 4.2s;
+  animation-delay: 2.2s;
 }
 .dotted_hide{
   position: absolute;
@@ -161,7 +161,7 @@ dotted circle
   width: 32vw;
   height: 32vw;
   transform-origin: left 16vw;
-  animation: rotate-circle-right 0.5s linear 4.2s forwards;
+  animation: rotate-circle-right 0.2s linear 2.2s forwards;
 }
 .dotted_right{
   position: absolute;
@@ -179,7 +179,7 @@ dotted circle
   width: 32vw;
   height: 32vw;
   transform-origin: right 16vw;
-  animation: rotate-circle-left01 0.5s linear 4.2s forwards;
+  animation: rotate-circle-left01 0.2s linear 2.2s forwards;
 }
 @keyframes rotate-circle-left01 {
   0%   {
@@ -206,7 +206,7 @@ white circle
 ============*/
 .white02{
   top: -100%;
-  animation-delay: 4.7s;
+  animation-delay: 2.7s;
 }
 .white01{
   width: 29vw;
@@ -223,7 +223,7 @@ white circle
   width: 29vw;
   height: 29vw;
   transform-origin: left 14.5vw;
-  animation: rotate-circle-right 0.3s linear 4.7s forwards;
+  animation: rotate-circle-right 0.3s linear 2.7s forwards;
 
 }
 .white01::after{
@@ -232,7 +232,7 @@ white circle
   width: 29vw;
   height: 29vw;
   transform-origin: right 14.5vw;
-  animation: rotate-circle-left 0.3s linear 4.7s forwards;
+  animation: rotate-circle-left 0.3s linear 2.7s forwards;
 }
 @keyframes rotate-circle-left {
   0%   {
@@ -257,7 +257,7 @@ gray circle
 ============*/
 .gray02{
   top: -200%;
-  animation-delay: 4.8s;
+  animation-delay: 2.8s;
 }
 .gray01{
   width: 8vw;
@@ -275,7 +275,7 @@ gray circle
   height: 8vw;
   background: #fff;
   transform-origin: left 4vw;
-  animation: rotate-circle-right 0.5s linear 4.8s forwards;
+  animation: rotate-circle-right 0.2s linear 2.8s forwards;
 
 }
 .gray01::after{
@@ -285,7 +285,7 @@ gray circle
   height: 8vw;
   background: #fff;
   transform-origin: right 4vw;
-  animation: rotate-circle-left03 0.5s linear 4.8s forwards;
+  animation: rotate-circle-left03 0.2s linear 2.8s forwards;
 }
 @keyframes rotate-circle-left03 {
   0%   {
@@ -310,7 +310,7 @@ orange circle
 ============*/
 .orange02{
   top: -300%;
-  animation-delay: 5.3s;
+  animation-delay: 2.2s;
 }
 .orange01{
   width: 27vw;
@@ -328,7 +328,7 @@ orange circle
   height: 27vw;
   background: #fff;
   transform-origin: left 13.5vw;
-  animation: rotate-circle-right 0.5s linear 5.3s forwards;
+  animation: rotate-circle-right 0.2s linear 2.2s forwards;
 
 }
 .orange01::after{
@@ -338,7 +338,7 @@ orange circle
   height: 27vw;
   background: #fff;
   transform-origin: right 13.5vw;
-  animation: rotate-circle-left02 0.5s linear 5.3s forwards;
+  animation: rotate-circle-left02 0.2s linear 2.2s forwards;
 }
 @keyframes rotate-circle-left02 {
   0%   {
@@ -380,7 +380,7 @@ orange circle
   transform: translate(-50%, -50%);
   width: 30vw;
   height: 30vw;
-  animation: name 1.0s cubic-bezier(0.165, 0.84, 0.44, 1) 5.9s forwards;
+  animation: name 1.0s cubic-bezier(0.165, 0.84, 0.44, 1) 2.9s forwards;
   opacity: 0;
 }
 .name p{
