@@ -269,8 +269,8 @@
   }
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:414px){
   .coreldraw__pdf_list::after{
-    right: 110px !important;
+    right: 125px !important;
   }
 }
